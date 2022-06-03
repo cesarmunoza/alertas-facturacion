@@ -24,8 +24,8 @@
 		</tr>		
 	</table>
 	</div>
-	<div th:if="${datosFacturas == null and datosFacturas.empty}">
-		No hay facturas pendientes por facturar con límites de intentos
+	<div th:if="${datosFacturas == null or datosFacturas.empty}">
+		<p>No hay facturas pendientes por facturar con límites de intentos</p>
 	</div>
 </body>
 </html>

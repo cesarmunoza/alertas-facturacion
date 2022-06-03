@@ -27,7 +27,7 @@ public class ControladorInicio {
 		datosFacturaPendiente2.setCedula("456");
 		datosFacturaPendiente2.setTipoDependencia("CEDI");
 		
-//		var datosFacturas = Arrays.asList(datosFacturaPendiente,datosFacturaPendiente2);
+		//var datosFacturas = Arrays.asList();
 		var datosFacturas = new ArrayList();
 		
 		
