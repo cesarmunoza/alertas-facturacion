@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Página de inicio</title>
+</head>
+<body>
+	<h1>Mostrar facturas pegadas</h1>
+	<p th:text="${mensaje}">info</p>
+	<br />
+	<div th:if="${datosFacturas != null and !datosFacturas.empty}">
+	<table border="1">
+		<tr>
+			<th>Estado</th>
+			<th>Cédula</th>
+			<th>Dependencia</th>
+		</tr>
+
+		
+		<tr th:each="factura : ${datosFacturas}">
+			<td th:text="${factura.invoiceStatus}">Estado</td>
+			<td th:text="${factura.cedula}">Cedula</td>
+			<td th:text="${factura.tipoDependencia}">Dependencia</td>
+		</tr>		
+	</table>
+	</div>
+	<div th:if="${datosFacturas == null and datosFacturas.empty}">
+		No hay facturas pendientes por facturar con límites de intentos
+	</div>
+</body>
+</html>
