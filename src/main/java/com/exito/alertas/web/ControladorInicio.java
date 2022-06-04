@@ -17,7 +17,9 @@ public class ControladorInicio {
 	private FacturaDao facturaDao;
 	
 	@GetMapping("/")
-	public String inicio(Model model) {		
+	public String inicio(Model model) {
+		
+		
 		
 //		var datosFacturaPendiente = new DatosFacturaPendiente();
 //		datosFacturaPendiente.setInvoiceStatus("pending");
