@@ -6,8 +6,8 @@
 </head>
 <body>
 	<h1>Mostrar facturas pegadas</h1>
-	<p th:text="${mensaje}">info</p>
-	<br />
+	
+	<a th:href="@{/buscar}">Buscar factura de pedido</a>
 	<div th:if="${datosFacturas != null and !datosFacturas.empty}">
 	<table border="1">
 		<tr>
