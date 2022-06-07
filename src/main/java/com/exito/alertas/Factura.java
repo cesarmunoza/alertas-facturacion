@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Document(value="invoicingPendingData")
 @Data
-public class DatosFacturaPendiente {
+public class Factura {
 	@Id
 	private String orderId;
 	private String invoiceStatus;
